@@ -1,0 +1,15 @@
+broadcast:
+  pre: '&9Сча мир сохраним'
+  post: '&9Имущество в безопастности'
+broadcastbackup:
+  pre: '&9AutoBackuping'
+  post: '&9AutoBackup Complete'
+broadcastpurge:
+  pre: '&9AutoPurging'
+  post: '&9AutoPurge Complete'
+autorestart:
+  restarting: '&9Машина устала, скоро проснётся'
+  countdown: '&9Сервер отдохнёт через {SECONDS} секунд'
+worldregen:
+  kickmessage: '&9Server is regenerating map, please come back later'
+insufficentpermissions: '&cYou do not have access to that command.'

@@ -1,0 +1,30 @@
+# +---------------------------------------------------------------------------------------------------------+ #
+# For the descriptions for each setting check spigot: https://www.spigotmc.org/resources/prefix.70359/        #
+# Made by martijnpu                                                                                           #
+# +---------------------------------------------------------------------------------------------------------+ #
+
+prefix:
+  # Here you can set the characters before and after the prefix
+  # You can include color codes here (&.), can also left blanked ("")
+  # For Example if you want the following ingame: "[Admin] martijnpu"
+  # start-character: "["
+  # end-character: "] "
+  start-character: "["
+  end-character: "] "
+
+  # Here you can set the maximum length of the Prefix WITHOUT color characters
+  max-length: 16
+
+  # Define here the characters you want to allow
+  # Check for the full list: https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html
+  whitelist:
+    - "\\w" #Alphabetic characters
+    - "\\p{Punct}" #Punctuation chatacters
+  #  - "\\p{IsHan}" #Chinese characters
+  #  - "♡⌘€" # Allow specific symbols
+
+  # Here you can specify any characters or words whose are blocked.
+  # Blacklist is NOT Case Sensitive
+  # Can be left blank ( "[]" )
+  blacklist:
+    - "fuck"

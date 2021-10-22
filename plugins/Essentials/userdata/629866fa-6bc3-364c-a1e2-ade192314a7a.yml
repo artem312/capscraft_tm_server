@@ -1,0 +1,32 @@
+lastAccountName: FenixOfDeath
+timestamps:
+  login: 1634849760249
+  logout: 1634861715889
+  lastteleport: 1634849798058
+  jail: 0
+  kits:
+    start: 1634767695616
+ipAddress: 194.158.212.5
+lastlocation:
+  world: DIM-6
+  x: 45.49719579425944
+  y: 86.72104842076523
+  z: 57.07299841601842
+  yaw: -302.55835
+  pitch: 24.899714
+logoutlocation:
+  world: overworld
+  x: 24.467074219403642
+  y: 182.8739942102325
+  z: 19.988807881205354
+  yaw: -138.66553
+  pitch: 54.149986
+homes:
+  home:
+    world: overworld
+    x: 29.39281227077105
+    y: 180.0
+    z: 19.866048485519958
+    yaw: -351.59937
+    pitch: 60.300034
+jailed: false
