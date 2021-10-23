@@ -8,54 +8,54 @@ prefix: "&ePrefiX &3➢ "
 messages:
   header: "&6&m&l+-----------------&6&l= &ePrefiX &6&l=&6&m&l-----------------+&r"
   footer: "&6&m&l+------------------------------------------+"
-  reload-config: "&6Successfully reloaded the config"
+  reload-config: "&6Конфиг успешно перезагружен"
   command:
-    no-permission: "&cYou don't have permission to execute this command"
-    no-permission-color: "&cYou don't have permission to use this color"
-    no-permission-other: "&cYou don't have permission to change the Prefix of others"
-    unknown: "&cDid you mean '/prefix help'?"
-    usage: "&cPlease usage '%COMMAND%'"
-    target: "&cYou must target a player to execute this command!"
+    no-permission: "&cУ вас нет доступа к данной команде"
+    no-permission-color: "&cУ вас нет разрешения на использование данного цвета"
+    no-permission-other: "&cУ вас нет разрешения на смену чужого префикса"
+    unknown: "&cМожет быть это? '/prefix help'?"
+    usage: "&cПожалуйста, испльзуйте '%COMMAND%'"
+    target: "&cВы должны выбрать игрока, для выполнения данной команды!"
   color:
-    invalid: "&cInvalid color. Pick a color from '/prefix list'"
-    no-permission: "&cYou are not allowed to use this color"
+    invalid: "&cНеверный цвет, выберите из этих '/prefix list'"
+    no-permission: "&cВам не разрешено использовать этот цвет"
     prefix:
-      other: "&6Changing the prefix color of %NAME%"
-      reset: "&6Prefix color reset"
-      changed: "&6Prefix color changed to %COLOR%"
+      other: "&6Изменение цвета префикса %NAME%"
+      reset: "&6Сброс цвета префикса"
+      changed: "&6Цвет префикса измненён на %COLOR%"
     name:
-      other: "&6Changing the name color of %NAME%"
-      reset: "&6Name color reset"
-      changed: "&6Name color changed to %COLOR%"
+      other: "&6Изменение цвета никнейма %NAME%"
+      reset: "&6Сброс цвета никнейма"
+      changed: "&6Цвет никнейма изменён на %COLOR%"
   prefix:
-    reset: "&6Prefix reset"
-    reset-other: "&6Resetting the prefix of %NAME%"
-    changed: "&6Prefix changed to %PREFIX%"
-    changed-other: "&6Changing the prefix of %NAME%"
+    reset: "&6Сброс префикса"
+    reset-other: "&6Сброс префикса %NAME%"
+    changed: "&6Префикс изменён на %PREFIX%"
+    changed-other: "&6Смена префикса %NAME%"
   list:
     name:
-      apply: "&aClick to apply this color to your name"
-      no-perm: "&cNo permission to use this color for your name"
+      apply: "&aНажмите, чтобы применить этот цвет к вашему никнейму"
+      no-perm: "&cУ вас нет разрешения на использование данного цвета в вашем никнейме"
     prefix:
-      apply: "&aClick to apply this color to your prefix"
-      no-perm: "&cNo permission to use this color for your prefix"
+      apply: "&aНажмите, чтобы применить этот цвет к вашему префиксу"
+      no-perm: "&cУ вас нет разрешения на использование данного цвета в вашем префиксе"
   error:
-    self-target: "&cYou can't target yourself"
-    player: "&cPlayer '&6%NAME%&c' doesn't exists! (or is just offline)"
-    blacklist: "&cYou've used a blacklisted word"
-    length: "&cYou can not have more than %SIZE% characters"
-    length-colorcode: "&cYou can not have more than %SIZE% characters excluding color codes!"
-    character: "&cYou've used a wrong character!"
-    colorcode: "&cYou can't use color codes!"
+    self-target: "&cВы не можете выбрать целью себя"
+    player: "&cИгрок '&6%NAME%&c' не существует! (Либо не онлайн)"
+    blacklist: "&cВы используете слово из чёрного списка"
+    length: "&cВы не можете иметь больше чем %SIZE% символов"
+    length-colorcode: "&cВы не можете иметь больше чем %SIZE% без учёта цветового кода!"
+    character: "&cВы использовали неправильный символ!"
+    colorcode: "&cВы не можете использовать цветовые коды!"
   help: |
-    &6➢ &a/prefix [text] &7- &eChange the text of your prefix
-    &6➢ &a/prefix color [color] &7- &eChange the color of your prefix
-    &6➢ &a/prefix name [color] &7- &eChange the color of your name
-    &6➢ &a/prefix list &7- &eList of all available colors
-    &6➢ &a/prefix reset &7- &eSet your prefix to the default value
+    &6➢ &a/prefix [text] &7- &eСмена текста вашего префикса
+    &6➢ &a/prefix color [color] &7- &eСмена цвета вашего префикса
+    &6➢ &a/prefix name [color] &7- &eСмена цвета вашего никнейма
+    &6➢ &a/prefix list &7- &eСписок всех доступных цветов
+    &6➢ &a/prefix reset &7- &eСброс префикса
   help-others: |
-    &6➢ &a/prefix [text] <name> &7- &eChange the text of someone else's prefix
-    &6➢ &a/prefix color [color] <name> &7- &eChange the color of someone else's prefix
-    &6➢ &a/prefix name [color] <name> &7- &eChange the color of someone else's name
-    &6➢ &a/prefix list &7- &eList of all available colors
-    &6➢ &a/prefix reset <name> &7- &eSet someone else's prefix to the default value
+    &6➢ &a/prefix [text] <name> &7- &eСмена текста чужого префикса
+    &6➢ &a/prefix color [color] <name> &7- &eСмена цвета чужого префикса
+    &6➢ &a/prefix name [color] <name> &7- &eСмена цвета чужого никнейма
+    &6➢ &a/prefix list &7- &eСписок всех доступных цветов
+    &6➢ &a/prefix reset <name> &7- &eСброс чужого префикса
