@@ -1,0 +1,30 @@
+Commands:
+  Reload:
+    Description: Reloads the plugin and its configuration.
+  Clear:
+    Description: Clears the chat.
+    Console: CONSOLE
+    Unknown: UNKNOWN
+Messages:
+  Commands:
+    Reload:
+      Success: '&aКонфиг перезагружен.'
+    Clear:
+      Success: '&aЧат очищен '
+  Chat:
+    AdDetected: '&4[ОШИБКА] &7Реклама запрещена! &c(%perm)'
+    BlockedWord: '&4[ОШИБКА] &7Это слово запрещено!'
+    AdNotify: "&c%player пытался написать: \n&a %message"
+    NoOneListens: '&cНекому слушать! Используйте дальний режим для разговора.'
+  CommandResult:
+    NoPermission: '&4[ОШИБКА] &7Нет прав! &c(%perm)'
+    WrongUsage: '&c[ОШИБКА] &7Неправильное использование! Введите команду &6%cmd help&7!'
+  AntiSpam:
+    Denied: '&e[Шпион] &7Я все вижу, не спамь! Подожди &e%time%
+      &7секунд!'
+  Player:
+    Join: '%prefix%displayname%suffix &eприсоединился к игре!'
+    Kick: '%prefix%displayname%suffix &eбыл изгнан!'
+    Quit: '%prefix%displayname%suffix &eпокинул нас!'
+  UpdateFound: '&a[ChatEx]&7 Доступна новая версия. Текущая версия:
+    %oldversion Новая версия: %newversion'

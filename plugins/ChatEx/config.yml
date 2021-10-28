@@ -34,45 +34,47 @@
 
 check-for-updates: true
 enable-bstats: true
-bungeecord: false
+bungeecord: true
 cross_server_timeout: 3
 message-format: '%prefix%displayname%suffix: %message'
 global-message-format: '&9[%world] %prefix%displayname%suffix: &e%message'
 multi-prefixes: false
 multi-suffixes: false
-ranged-mode: false
+ranged-mode: true
 ranged-prefix: '!'
-show-no-players-near: true
-chat-range: 100
-logChat: false
+show-no-players-near: false
+chat-range: 50
+logChat: true
 debug: false
-Locale: en-EN
+Locale: ru-RU
 Ads:
   Enabled: true
   Bypass:
-  - 127.0.0.1
-  - my-domain.com
+    - 127.0.0.1
+    - my-domain.com
   Log: true
   SmartManager: true
   SmartConfig:
     DomainEndings:
-    - com
-    - net
-    - org
-    - de
-    - icu
-    - uk
-    - ru
-    - me
-    - info
-    - top
-    - xyz
-    - tk
-    - cn
-    - ga
-    - cf
-    - nl
-    - eu
+      - com
+      - net
+      - org
+      - de
+      - icu
+      - uk
+      - ru
+      - me
+      - info
+      - top
+      - xyz
+      - tk
+      - cn
+      - ga
+      - cf
+      - nl
+      - eu
+      - by
+      - io
     Multiplier: 4
     UnMultiplier: 1
   ReplaceCommas: false
@@ -81,14 +83,29 @@ Ads:
     ReduceThreshold: 0.1
     MaxLinkLength: 10
 AntiSpam:
-  Seconds: 5
+  Seconds: 3
   Enable: true
 BlockedWords:
-- shit
-- '@everyone'
+  - PIDOR
+  - NIGGA
+  - нигер
+  - пидорас
+  - пидор
+  - мать ебал
+  - ебал мамку
+  - мамкуебал
+  - матьебал
+  - пидорасина
+  - pidorasina
+  - лох
+  - хуй
+  - матьебал
+  - хуйня
+  - гандон
+  - '@everyone'
 Tablist:
   Change: true
-  format: '%prefix%player%suffix'
+  format: '%prefix%player'
 Messages:
   JoinAndQuit:
-    Enabled: false
+    Enabled: true
