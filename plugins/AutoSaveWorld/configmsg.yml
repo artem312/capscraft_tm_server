@@ -1,15 +1,15 @@
 broadcast:
-  pre: '&9Сча мир сохраним'
-  post: '&9Имущество в безопастности'
+  pre: '&9Идёт сохрание мира'
+  post: '&9Прогресс сохранён'
 broadcastbackup:
-  pre: '&9AutoBackuping'
-  post: '&9AutoBackup Complete'
+  pre: '&9Автоматическое Резервное копирование'
+  post: '&9Резервное копирование успешно завершено!'
 broadcastpurge:
-  pre: '&9AutoPurging'
-  post: '&9AutoPurge Complete'
+  pre: '&9Автоматическая очистка'
+  post: '&9Очистка успешно завершена!'
 autorestart:
-  restarting: '&9Машина устала, скоро проснётся'
-  countdown: '&9Сервер отдохнёт через {SECONDS} секунд'
+  restarting: '&9Сервер уходит на рестарт! '
+  countdown: '&9Сервер будет перезагружен через {SECONDS} секунд'
 worldregen:
-  kickmessage: '&9Server is regenerating map, please come back later'
-insufficentpermissions: '&cYou do not have access to that command.'
+  kickmessage: '&9Север генерирует карту, пожалуйста вернитесь позже'
+insufficentpermissions: '&cУ вас нет доступа к данной команде.'
