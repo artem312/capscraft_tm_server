@@ -1,55 +1,55 @@
 Help:
   List:
     - '&e&m------&r &6&lBetterRTP &8| &7Help &e&m------'
-    - ' &7- &e/%command% &7- Случайно телепортирует вас!'
-  ##Если у игрока есть разрешение на rtp другого игрока, это сообщение будет добавлено в список!
-  RtpOther: ' &7- &e/%command% <player> &7- Случайно телепортирует другого игрока!'
-  ##Если у игрока есть разрешение на перезагрузку плагина, это сообщение будет добавлено в список!
-  Reload: ' &7- &e/%command% reload &7- Перезагружает плагин'
-  
+    - ' &7- &e/%command% &7- Randomly teleports you!'
+  ##If the player has permission to rtp another player, this message will be added under the list!
+  RtpOther: ' &7- &e/%command% <player> &7- Randomly teleports another player!'
+  ##If the player has permission to reload the plugin this message will be added under the list!
+  Reload: ' &7- &e/%command% reload &7- Reloads the plugin'
+
 Messages:
   Prefix: '&7[&6BetterRTP&7] '
-  ## Хлопцы! %x% %y% and %z% это координаты х y z на которые делает тп игрок#
+  ## Placeholders! %x% %y% and %z% are the x, y, and z coordinates that the player is being teleported to! #
   Success:
-    Paid: '&aВы были телепортированы ''d to&7 x=%x% y=%y% z=%z% for &c$%price%&7!'
-    Bypass: '&aВы были телепортированы''d to&7 x=%x% y=%y% z=%z%'
+    Paid: '&aYou have been tp''d to&7 x=%x% y=%y% z=%z% for &c$%price%&7!'
+    Bypass: '&aYou have been tp''d to&7 x=%x% y=%y% z=%z%'
   Failed:
-    Price: '&cНе хватает средств на rtp! &7Вы должны иметь минимум $%price% &7на балансе для rtp!'
-    NotSafe: '&cНе удалось найти безопасное место %attempts% неудачных попыток! &7Вы не были телепортированы''d!'
+    Price: '&cCould not rtp because of insufficent funds! &7You must have atleast $%price% &7to rtp!'
+    NotSafe: '&cCould not find safe spot within %attempts% attempts! &7You were not RTP''d!'
   Other:
-    Success: '&a%player% был телепортирован''d to&7 x=%x% y=%y% z=%z%'
-    NotSafe: '&cНе удалось найти безопасное место %attempts% неудачных попыток! &7%player% не был телепортирован''d!'
-  Reload: '&eКонфиг успешно перезагружен!'
+    Success: '&a%player% has been tp''d to&7 x=%x% y=%y% z=%z%'
+    NotSafe: '&cCould not find safe spot within %attempts% attempts! &7%player% was not rtp''d!'
+  Reload: '&eConfig reloaded successfully!'
   NoPermission:
-    Basic: '&cСтоп! &7У вас нет прав для данной команды!'
-    World: '&cСтоп! &7Вам не разрешено делать rtp в этом мире - %world% &7!'
-  ## %world% Это мир где находится игрок и в котором отключено rtp #
-  DisabledWorld: '&7 В %world% &7мире отключено rtp! &7Не удалость совершить rtp!'
-  Cooldown: '&cПодождите! &7Вы не можете использовать rtp еще &c%time% &7секунд!'
-  Invalid: '&cОшибка ввода. Попробуйте ''/%command% для помощи'''
-  NotOnline: '&cИгрок с ником &7%player% &cне находится онлайн!'
-  Delay: '&aТелепортацие случится через &f%time% &aсекунд! Не двигайся!'
-  Moved: '&cВы двигались! &7Телепортация была отменена!'
-  NotExist: '&cПохоже что мир &7%world% &cне существует!'
-  Already: '&cУПС! &7rtp уже активно,просто подождите!'
+    Basic: '&cSorry! &7You don''t have permission to use this command!'
+    World: '&cSorry! &7You are not allowed rtp in the %world% world!'
+  ## %world% is the world the player is in that is disabled to rtp in! #
+  DisabledWorld: '&cDisabled World %world%! &7Could not RTP!'
+  Cooldown: '&cSorry! &7You can''t rtp for another &c%time% &7seconds!'
+  Invalid: '&cInvalid argument. Try ''/%command% help'''
+  NotOnline: '&cThe player &7%player% &cis not online!'
+  Delay: '&aTeleporting in &f%time% &aseconds! Don''t move!'
+  Moved: '&cYou have moved! &7RTP was cancelled!'
+  NotExist: '&cLooks like the world &7%world% &cdoesn''t exist!'
+  Already: '&cWhoops! &7Looks like you are already rtp''ing, have some patience!'
 
-Titles:
-  Enabled: false
-  Delay:
-    ## Настройка, позволяющая также отправлять сообщения чата, игнорирует включенный параметр
-    SendChatMessage: true
-    ## Both support %player% placeholders не понял как перевести
-    Title: '&6BetterRTP от SRC'
-    Subtitle: '&fТелепортация через %time% секунд!'
-  Success:
-    ## Настройка, позволяющая также отправлять сообщения чата, игнорирует включенный параметр
-    SendChatMessage: true
-    ## Both support %player% %x% %y% and %z% placeholders
-    Title: '&6BetterRTP by SRC'
-    Subtitle: '&fТелепортация на x=%x% y=%y% z=%z%'
-
-Sounds:
-  Enabled: false
-  ## More sounds at https://www.spigotmc.org/wiki/cc-sounds-list/
-  Delay: 'entity_tnt_primed'
-  Success: 'entity_generic_explode'
+#Titles:
+#  Enabled: false
+#  Delay:
+#    ## Setting to also send the chat message, ignores the Enabled setting
+#    SendChatMessage: true
+#    ## Both support %player% placeholders
+#    Title: '&6BetterRTP by SRC'
+#    Subtitle: '&fTeleporting in %time% seconds!'
+#  Success:
+#    ## Setting to also send the chat message, ignores the Enabled setting
+#    SendChatMessage: true
+#    ## Both support %player% %x% %y% and %z% placeholders
+#    Title: '&6BetterRTP by SRC'
+#    Subtitle: '&fTeleporting to x=%x% y=%y% z=%z%'
+#
+#Sounds:
+#  Enabled: false
+#  ## More sounds at https://www.spigotmc.org/wiki/cc-sounds-list/
+#  Delay: 'entity_tnt_primed'
+#  Success: 'entity_generic_explode'

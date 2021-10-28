@@ -4,7 +4,7 @@
 #DO NOT TOUCH!
 Version: 2.4.1
 
-Language-File: 'en.yml'
+Language-File: 'ru.yml'
 
 ## Если для параметра worldborder установлено значение false, то он не будет исп. ванильную границу мира# ##Настоятельно рекомендуется##
 Settings:
@@ -51,6 +51,14 @@ BlacklistedBlocks:
 DisabledWorlds:
   - world_nether
   - world_the_end
+  - DIM-1
+  - DIM1
+  - DIM14676
+  - DIM-9999
+  - DIM-11325
+  - DIM-12
+  - DIM-6
+  - DIM-2
 
 ## Миры в которых вы хотите иметь собственный мин/макс радиус возрождения #
 ## [MaxRadius] и [MinRadius] должны быть положительными! Не могу быть равны друг другу!
