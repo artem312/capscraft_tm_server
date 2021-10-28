@@ -31,10 +31,10 @@ System:
       # Major is the first segment [Major].Minor
 
       # Major ([Major].Minor) 1.00 Dollar (With Seperate 1 Dollar)
-      Major: [ 'Dollar', 'Dollars' ]
+      Major: [ 'Монеты', 'Монет' ]
 
       # Minor (Major.[Minor]) 0.23 Coins  (With Seperate 0 Dollars, 23 Coins)
-      Minor: [ 'Coin', 'Coins' ]
+      Minor: [ 'Копеек', 'Копеек' ]
 
     Account:
       # Default account balance when created
@@ -55,7 +55,7 @@ System:
     # Instead of 1.23 Dollars you will see: 1 Dollar.
     # If your money is 0.23 you will see 0 Dollars if Minor is false, 23 Coins if Minor is true.
     # !!! Notice: This overrides seperate !!!
-    Single: false
+    Single: true
 
   # Logs all monetary transactions passed through iConomy
   Logging:
