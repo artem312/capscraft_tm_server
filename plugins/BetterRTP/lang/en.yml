@@ -34,7 +34,7 @@ Messages:
   Already: '&cУПС! &7rtp уже активно,просто подождите!'
 
 Titles:
-  Enabled: true
+  Enabled: false
   Delay:
     ## Настройка, позволяющая также отправлять сообщения чата, игнорирует включенный параметр
     SendChatMessage: true
@@ -49,7 +49,7 @@ Titles:
     Subtitle: '&fТелепортация на x=%x% y=%y% z=%z%'
 
 Sounds:
-  Enabled: true
+  Enabled: false
   ## More sounds at https://www.spigotmc.org/wiki/cc-sounds-list/
   Delay: 'entity_tnt_primed'
   Success: 'entity_generic_explode'
