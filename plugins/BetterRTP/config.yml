@@ -6,18 +6,20 @@ Version: 2.4.1
 
 Language-File: 'en.yml'
 
-## If WorldBorder is set to false, it won't use the worldborder set by the vanilla /worldborder! # ##Highly Recommended##
+## Если для параметра worldborder установлено значение false, то он не будет исп. ванильную границу мира# ##Настоятельно рекомендуется##
 Settings:
   RespectWorldGuard: true
-  ## Must be a positive integer #
+  ## Должно быть положительное и целое число #
   MinRadius: 25
-  ## Maximum amount of tried before BetterRTP gives up and sends a NotSafeMessage #
+  ## Количество попыток rtp с поиском лучшего места, прежде чем напишет сообщение Не найдено безопасного места #
+  ## Должно быть положительное и целое число #
   MaxAttempts: 15
-  ## Enabled or disabled cooldown timer, time is in SECONDS
+  ## включает или выключает кд rtp, время в секундах
+  ## Должно быть положительное и целое число #
   Cooldown:
     Enabled: true
     Time: 10
-  ## Time between command and actually rtp'ing, time is in SECONDS. Set to "0" to disable delay timer
+  ## Задерка телепортации, после нажатия команды в секундах
   Delay:
     Time: 5
     CancelOnMove: true
@@ -25,16 +27,17 @@ Settings:
     
 Default:
   UseWorldBorder: true
-  ## "Biomes: []" means all biomes are allowed!
-  ## Biomes are optional, more biomes at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html
+  ## "Biomes: []" означает, что разрешены все биомы!
+  ## Биомы являются необязательными больше биомов на https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html
+  ## Если честно, то нихрена непонятно если на 13 строке уже задается мин радиус телепортации
   Biomes: []
   MaxRadius: 100
   MinRadius: 10
-  ## If "UseWorldBorder" is set to true above, these values WILL be ignored! Except Biomes!
+  ## если для параметра"UseWorldBorder" стоит true, то значения будут проигнорированы, КРОМЕ БИОМОВ
   CenterX: 0
   CenterZ: 0
 
-## Blocks RTP will try to not teleport onto. More Blocks at: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html #
+## Блоки, на которые не будет телепортировать https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html #
 BlacklistedBlocks:
   - stationary_water
   - stationary_lava
@@ -44,17 +47,17 @@ BlacklistedBlocks:
   - leaves
   - leaves_2
 
-## Worlds to NOT allow rtp to function #
+## Миры где rtp недоступен #
 DisabledWorlds:
   - world_nether
   - world_the_end
 
-## Worlds you want to have a custom min/max and spawn center in #
-## [MaxRadius] and [MinRadius] MUST be positive! These cannot be equal to each other!
+## Миры в которых вы хотите иметь собственный мин/макс радиус возрождения #
+## [MaxRadius] и [MinRadius] должны быть положительными! Не могу быть равны друг другу!
 CustomWorlds:
   world:
     UseWorldBorder: false
-    ## If UseWorldBorder is true, everything will be ignored MINUS "MinRadius"!
+    ## если параметр "UseWorldBorder" будет "true", то все будет проигнорировано за вычетом "MinRadius"!
     MaxRadius: 1000
     MinRadius: 100
     CenterX: 0
@@ -64,12 +67,12 @@ CustomWorlds:
     MinRadius: 1000
     CenterX: 123
     CenterZ: -123
-    ## Biomes are optional, but useful! More biomes: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html
+    ## Биомы необязательны, но полезны: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html
     Biomes:
       - 'desert'
       - 'forest'
 
-## Override a world and rtp a player executing the command in one world, to another
+## Переопределяет мир и перемещает игрока исп команду в одном мире в другой "юзнул в ад и краю-попал в обычный"
 Override:
   world_nether: 'world'
   world_the_end: 'world'
