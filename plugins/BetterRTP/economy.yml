@@ -7,7 +7,7 @@ Economy:
 
 CustomWorlds:
   ## Включает мировую пользовательскую зарядку?!
-  Enabled: true
+  Enabled: false
   Worlds:
     ## У игрока будет взыматься 5 при вводе  /rtp, если у них нет "betterrtp.eco.bypass"
     world: 5

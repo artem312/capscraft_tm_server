@@ -8,17 +8,18 @@ Language-File: 'en.yml'
 
 ## Если для параметра worldborder установлено значение false, то он не будет исп. ванильную границу мира# ##Настоятельно рекомендуется##
 Settings:
+  # Параметр ниже отвечает за ртп на чужой регион true исключает эту возможность
   RespectWorldGuard: true
   ## Должно быть положительное и целое число #
-  MinRadius: 25
+  MinRadius: 500
   ## Количество попыток rtp с поиском лучшего места, прежде чем напишет сообщение Не найдено безопасного места #
   ## Должно быть положительное и целое число #
-  MaxAttempts: 15
+  MaxAttempts: 5
   ## включает или выключает кд rtp, время в секундах
   ## Должно быть положительное и целое число #
   Cooldown:
     Enabled: true
-    Time: 10
+    Time: 30
   ## Задерка телепортации, после нажатия команды в секундах
   Delay:
     Time: 5
@@ -31,8 +32,8 @@ Default:
   ## Биомы являются необязательными больше биомов на https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html
   ## Если честно, то нихрена непонятно если на 13 строке уже задается мин радиус телепортации
   Biomes: []
-  MaxRadius: 100
-  MinRadius: 10
+  MaxRadius: 500
+  MinRadius: 200
   ## если для параметра"UseWorldBorder" стоит true, то значения будут проигнорированы, КРОМЕ БИОМОВ
   CenterX: 0
   CenterZ: 0
@@ -54,25 +55,25 @@ DisabledWorlds:
 
 ## Миры в которых вы хотите иметь собственный мин/макс радиус возрождения #
 ## [MaxRadius] и [MinRadius] должны быть положительными! Не могу быть равны друг другу!
-CustomWorlds:
-  world:
-    UseWorldBorder: false
-    ## если параметр "UseWorldBorder" будет "true", то все будет проигнорировано за вычетом "MinRadius"!
-    MaxRadius: 1000
-    MinRadius: 100
-    CenterX: 0
-    CenterZ: 0
-  world_nether:
-    MaxRadius: 100000
-    MinRadius: 1000
-    CenterX: 123
-    CenterZ: -123
-    ## Биомы необязательны, но полезны: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html
-    Biomes:
-      - 'desert'
-      - 'forest'
+#CustomWorlds:
+#  world:
+#    UseWorldBorder: false
+#    ## если параметр "UseWorldBorder" будет "true", то все будет проигнорировано за вычетом "MinRadius"!
+#    MaxRadius: 1000
+#    MinRadius: 100
+#    CenterX: 0
+#    CenterZ: 0
+#  world_nether:
+#    MaxRadius: 100000
+#    MinRadius: 1000
+#    CenterX: 123
+#    CenterZ: -123
+#    ## Биомы необязательны, но полезны: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html
+#    Biomes:
+#      - 'desert'
+#      - 'forest'
 
 ## Переопределяет мир и перемещает игрока исп команду в одном мире в другой "юзнул в ад и краю-попал в обычный"
-Override:
-  world_nether: 'world'
-  world_the_end: 'world'
+#Override:
+#  world_nether: 'world'
+#  world_the_end: 'world'
