@@ -1,7 +1,7 @@
-no-open-permission: '&cYou don''t have permission &e{permission} &cto use this menu.'
-default-no-icon-permission: '&cYou don''t have permission for this icon.'
-no-required-item: '&cYou must have &e{amount}x {material} &c(durability: {durability}) for this.'
-no-money: '&cYou need {money}$ for this.'
-no-exp: '&cYou need {levels} XP levels for this.'
-menu-not-found: '&cMenu not found! Please inform the staff.'
+no-open-permission: '&cУ вас нет разрешения &e{permission} &cчтобы использовать данное меню.'
+default-no-icon-permission: '&cу вас нет разрешения для этого значка.'
+no-required-item: '&cВы должны иметь &e{amount}x {material} &c(durability: {durability}) для этого.'
+no-money: '&cВам нужно {money}$ для этого.'
+no-exp: '&cВам нужно {levels} уровней для этого.'
+menu-not-found: '&cМеню не найдено! Пожалуйста, проинформируйте администрацию.'
 any: any
