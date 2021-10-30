@@ -355,7 +355,7 @@ item-merger:
 # -- 'remove-entities' What entities SHOULD be removed during removal
 auto-removal:
   enabled: true
-  broadcast-message: '&1[Бомж] &aУкрал +RemoveAmount сущностей!'
+  broadcast-message: '&1[Бомж] &aВынес +RemoveAmount мусора!'
   broadcast-removal: true
   autoremoval-interval: 460
   world-filter:
@@ -429,7 +429,7 @@ limit:
   enabled: false
   max: 1000
   check-interval: 60
-  broadcast-message: '&6[Бомж] &aЛютует, украл +RemoveAmount сущностей!'
+  broadcast-message: '&6[Бомж] &aЖирует, вынес +RemoveAmount мусора!'
   world-filter:
   # - this_world <-This world will be ignored during removal!
   broadcast-removal: true
