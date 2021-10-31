@@ -8,17 +8,17 @@ Help:
   Reload: ' &7- &e/%command% reload &7- Перезагружает плагин'
 
 Messages:
-  Prefix: '&7[&6BetterRTP&7] '
+  Prefix: '&7[&6CapsCraft&7] '
   ## Хлопцы! %x% %y% and %z% это координаты х y z на которые делает тп игрок#
   Success:
-    Paid: '&aВы были телепортированы ''d to&7 x=%x% y=%y% z=%z% for &c$%price%&7!'
-    Bypass: '&aВы были телепортированы''d to&7 x=%x% y=%y% z=%z%'
+    Paid: '&aВы были телепортированы на&7 x=%x% y=%y% z=%z% for &c$%price%&7!'
+    Bypass: '&aВы были телепортированы на&7 x=%x% y=%y% z=%z%'
   Failed:
     Price: '&cНе хватает средств на rtp! &7Вы должны иметь минимум $%price% &7на балансе для rtp!'
-    NotSafe: '&cНе удалось найти безопасное место %attempts% неудачных попыток! &7Вы не были телепортированы''d!'
+    NotSafe: '&cНе удалось найти безопасное место %attempts% неудачных попыток! &7Вы не были телепортированы!'
   Other:
-    Success: '&a%player% был телепортирован''d to&7 x=%x% y=%y% z=%z%'
-    NotSafe: '&cНе удалось найти безопасное место %attempts% неудачных попыток! &7%player% не был телепортирован''d!'
+    Success: '&a%player% был телепортирован на на&7 x=%x% y=%y% z=%z%'
+    NotSafe: '&cНе удалось найти безопасное место %attempts% неудачных попыток! &7%player% не был телепортирован!'
   Reload: '&eКонфиг успешно перезагружен!'
   NoPermission:
     Basic: '&cСтоп! &7У вас нет прав для данной команды!'
@@ -33,23 +33,3 @@ Messages:
   NotExist: '&cПохоже что мир &7%world% &cне существует!'
   Already: '&cУПС! &7rtp уже активно,просто подождите!'
 
-Titles:
-  Enabled: false
-  Delay:
-    ## Настройка, позволяющая также отправлять сообщения чата, игнорирует включенный параметр
-    SendChatMessage: true
-    ## Both support %player% placeholders не понял как перевести
-    Title: '&6BetterRTP от SRC'
-    Subtitle: '&fТелепортация через %time% секунд!'
-  Success:
-    ## Настройка, позволяющая также отправлять сообщения чата, игнорирует включенный параметр
-    SendChatMessage: true
-    ## Both support %player% %x% %y% and %z% placeholders
-    Title: '&6BetterRTP by SRC'
-    Subtitle: '&fТелепортация на x=%x% y=%y% z=%z%'
-
-Sounds:
-  Enabled: false
-  ## More sounds at https://www.spigotmc.org/wiki/cc-sounds-list/
-  Delay: 'entity_tnt_primed'
-  Success: 'entity_generic_explode'
