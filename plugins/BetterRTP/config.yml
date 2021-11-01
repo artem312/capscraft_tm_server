@@ -52,14 +52,14 @@ BlacklistedBlocks:
 DisabledWorlds:
   - world_nether
   - world_the_end
-  - DIM-1
-  - DIM1
-  - DIM14676
-  - DIM-9999
-  - DIM-11325
-  - DIM-12
-  - DIM-6
-  - DIM-2
+#  - DIM-1
+#  - DIM1
+#  - DIM14676
+#  - DIM-9999
+#  - DIM-11325
+#  - DIM-12
+#  - DIM-6
+#  - DIM-2
 
 ## Миры в которых вы хотите иметь собственный мин/макс радиус возрождения #
 ## [MaxRadius] и [MinRadius] должны быть положительными! Не могу быть равны друг другу!

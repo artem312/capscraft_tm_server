@@ -33,7 +33,7 @@ regions:
     enable: true
     invincibility-removes-mobs: false
     nether-portal-protection: false
-    fake-player-build-override: true
+    fake-player-build-override: fasle
     explosion-flags-block-entity-damage: true
     high-frequency-flags: false
     protect-against-liquid-flow: true
@@ -56,7 +56,7 @@ host-keys: {}
 summary-on-start: true
 op-permissions: true
 build-permission-nodes:
-    enable: true
+    enable: false
     deny-message: '&eИзвините, но вам не разрешено делать это здесь.'
 event-handling:
     block-entity-spawns-with-untraceable-cause: false
