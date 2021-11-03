@@ -1,10 +1,14 @@
 enable: true
 commands:
   enable: true
-  list: []
-  members: []
+  list: [sethome]
+  members: [sethome]
 entitis: []
 flags:
-  enable: false
-flag-delay: 10
-entity-protect: false
+  enable: true
+  enderman-grief: deny
+  pvp: deny
+  enderpearl: deny
+
+flag-delay: 0
+entity-protect: true
