@@ -1,27 +1,36 @@
 claim:
-  vertexpand: false
-  blocklimits:
+  vertexpand: true #Автоматически расширяет регион по вертикали при привате
+  blocklimits: #Ограничивает максимальное количество блоков которая данная группа может приватить(в самом WorldGuard лимит должен стоять наибольшим из указанных здесь.)
     enabled: false
-    limits: {}
-regionprotect:
-  flow:
-    lava: false
-    water: false
-    other: false
+    limits:
+      default: 300000
+regionprotect: #Важно: false означает что функция выключена, true - включена.
+  flow: #Блокирует течение жидкостей в регион из не принадлежашего к этому региону места(Также отключет разлив жидкости из пристыкованного к региону раздатчика)
+    lava: true
+    water: true
+    other: true
   fire:
-    spread:
-      toregion: false
-      inregion: false
-    burn: false
-  explosion:
-    block: false
-    entity: false
-autoflags:
-  enabled: false
-  flags: {}
-restrictcommands:
-  enabled: false
-  commands: []
-extendedwewand: false
+    spread: #Запрещает распространение огня в некоторых случаях.
+      toregion: true #Запрещает распростаранения огня в регон из мест не принадлежащих региону.
+      inregion: false #Запрещает распространение огня внутри региона
+    burn: false #Запрещает сгорание блоков внутри региона
+  explosion: #Защищает регион от взрывов
+    block: true #Защищает блоки от взырва
+    entity: true #Защищает энтитей от взырва
+autoflags: #Автоматически устанавливает флаги при привате региона (флаги устаналиваются через 1 секунду)
+  enabled: true
+  flags:
+    enderman-grief: DENY
+    pvp: DENY
+    enderpearl: DENY
+restrictcommands: #Запрещает вводить данные команды на терртори чужого привата
+  enabled: true
+  commands:
+    - warp set
+    - warp pset
+    - sethome
+    - warp create
+    - warp preate
+extendedwewand: true #Ванд выданный командой //wand будет исчезать при смерти, а также выбросе из инвентаря.
 misc:
-  pvpmode: default
+  pvpmode: default #Устанавливает логику работы пвп в регионе при отсутствии флага PVP, default - поведение по умолчанию (бить может только владелец), allow - все могут бить, deny - никто не может бить.
