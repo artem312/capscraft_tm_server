@@ -370,10 +370,12 @@ auto-removal:
   minecart: false
   primed-tnt: true
   item-filter:
-#    - '6582'
-#    - '6542'
-  # - Stone <-This item-id will be ignored during removal!
-  # - Grass
+    - 6571
+    - 6422
+    - 6545
+    - 6582
+    - 7607
+
   remove-entities:
     - Arrow onGround
     - Snowball
