@@ -370,6 +370,8 @@ auto-removal:
   minecart: false
   primed-tnt: true
   item-filter:
+#    - '6582'
+#    - '6542'
   # - Stone <-This item-id will be ignored during removal!
   # - Grass
   remove-entities:
