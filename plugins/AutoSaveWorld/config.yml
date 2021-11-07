@@ -108,16 +108,16 @@ restart:
   juststop: false
   oncrash:
     enabled: false
-    scriptpath: ''
+    scriptpath: 'start.bat'
     timeout: 60
     checkerstartdelay: 20
     runonnonpluginstop: false
   auto:
     enabled: true
     broadcast: true
-    scriptpath: ''
+    scriptpath: 'start.bat'
     time:
-    - 70
+    - 02:40
     countdown:
       enabled: true
       broadcastonsecond:
@@ -133,7 +133,8 @@ restart:
       - 3
       - 2
       - 1
-    commands: []
+    commands:
+      - restart
 consolecommand:
   timemode:
     enabled: false
